@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #1e847f;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+}
+
+.sidebar h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+  /* Admin Panel Styling */
+.main {
+  margin-left: 230px;
+  padding: 30px;
+  width: 100vw;
+}
+
+.main h1 {
+  color: #1e847f;
+  margin-bottom: 15px;
+}
+
+.main p {
+  margin-bottom: 10px;
+}
+#addproduct{
+    margin-top: 30px;
+}
+
+/* Add Product Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+form label {
+  margin-top: 8px;
+}
+
+form input{
+  margin-top: 3px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form textarea {
+  margin-top: 3px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #1e847f;
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100px;
+}
+
+form button:hover {
+  background-color: #07635f;
+
+}
+#productlist{
+    margin-top: 30px;
+}
+
+
+/* Admin Panel Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th{
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; 
+}
+td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  background-color: #1e847f;
+  color: white;
+}
+#orders{
+    margin-top: 30px;
+}

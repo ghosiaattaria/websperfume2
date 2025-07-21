@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Responsive Cards</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.2em;
+      margin: 0 0 10px;
+    }
+
+    .card-description {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .card-price {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #e91e63;
+    }
+.footer {
+  background-color: #1e847f;
+  color: white;
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  font-size: 14px;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footer-section ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffe600;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffe600;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+}
+
+/* --- Navbar Top Line --- */
+.navbar1 {
+  background-color: #1e847f;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* --- Main Navbar --- */
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.searchbar i,
+.account i {
+  font-size: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+/* --- Logo Center --- */
+.logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* --- Navbar Menu --- */
+.navbar3-menu {
+  background-color: #1e847f;
+  padding: 10px 0;
+}
+
+.navbar3-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.navbar3-menu ul li {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.navbar3-menu ul li:hover {
+  background-color: #146c66;
+  border-radius: 5px;
+}
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+   @media (max-width: 768px) {
+  .navbar2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar3-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+
+
+ <div class="navbar">
+    <div class="navbar1">
+      <p class="nav1">
+        Free Shipping On Order Over $100</p>
+    </div>
+    <div class="navbar2">
+      <div class="searchbar">
+
+        <i class="fa-solid fa-magnifying-glass" style="color: #1e847f;"></i>
+      </div>
+      <div class="logo">
+        <img width="180px" height="150px" src="./assets/logo.jpg" alt="perfume logo">
+      </div>
+      <div class="account">
+        <a href="./sign.html " target="_blank">
+          <i class="fa-solid fa-user user" style="color: #1e847f;"> </i></a>
+        <i class="fa-solid fa-cart-shopping cart" style="color: #1e847f;"></i>
+      </div>
+    </div>
+    <div class="navbar3-menu">
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+
+        <li><a href="./index.html">Best-seller</a></li>
+
+        <li><a href="./man.html">Him</a> </li>
+        <li><a href="./woman.html">her</a> </li>
+
+        <li><a href="./index.html">kids</a></li>
+        <li><a href="./index.html">Gift set</a></li>
+       
+       <li> <a href="admin.html" class="admin-btn">Admin</a></li>
+      </ul>
+        
+    </div>
+  </div>
+
+
+<br><br><br><br>
+
+  
+  <div class="card-container">
+
+    <div class="card">
+      <img src="./assets/img1.avif" alt="Pink Handbag" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Shadow Drift</h3>
+        <p class="card-description">Power in every spray. 💥</p>
+        <p class="card-price">Rs. 3,200</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img2.avif" alt="Modern Shoes" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Oak Frost</h3>
+        <p class="card-description">Own the room with your scent. 🕴️</p>
+        <p class="card-price">Rs. 2,499</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img3.avif" alt="Smart Watch" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Urban Intense</h3>
+        <p class="card-description">Masculine. Magnetic. Memorable. 🧲</p>
+        <p class="card-price">Rs. 5,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img4.avif" alt="Pink Handbag" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Dark Echoes Collection</h3>
+        <p class="card-description">Fragrance that defines you. 🧬</p>
+        <p class="card-price">Rs. 3,200</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img5.avif" alt="Modern Shoes" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Signature Elements</h3>
+        <p class="card-description">Be the man they remember. 🧠</p>
+        <p class="card-price">Rs. 2,499</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img6.avif" alt="Smart Watch" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Gentleman’s Trail</h3>
+        <p class="card-description">Not just a scent — a legacy. 🏛️</p>
+        <p class="card-price">Rs. 5,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img7.avif" alt="Pink Handbag" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Storm & Smoke</h3>
+        <p class="card-description">Strength, bottled. 💪</p>
+
+        <p class="card-price">Rs. 3,200</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img8.avif" alt="Modern Shoes" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Raw & Refined</h3>
+        <p class="card-description">Dark, deep, and dangerously smooth. 🌌</p>
+        <p class="card-price">Rs. 2,499</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img9.avif" alt="Smart Watch" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Legacy in a Box</h3>
+        <p class="card-description">Confidence starts with the first spray. 🎯</p>
+        <p class="card-price">Rs. 5,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img10.avif" alt="Pink Handbag" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Noir Intense Set</h3>
+        <p class="card-description">Designed to dominate. 🦁</p>
+        <p class="card-price">Rs. 3,200</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img11.avif" alt="Modern Shoes" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">The Essence Vault</h3>
+        <p class="card-description">Make your mark — without saying a word. 🕶️</p>
+        <p class="card-price">Rs. 2,499</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img12.avif" alt="Smart Watch" height="300px" width="300px">
+      <div class="card-content">
+        <h3 class="card-title">Bold & Bottled</h3>
+        <p class="card-description">Scent of a true gentleman. 🎩</p>
+        <p class="card-price">Rs. 5,000</p>
+      </div>
+    </div>
+
+  </div>
+   <br><br><br><br><br>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>About Us</h2>
+      <p>We provide premium perfumes and luxury gift sets for all age groups. Discover your signature scent today!</p>
+    </div>
+
+    <div class="footer-section links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Gift Sets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h2>Contact Us</h2>
+      <p><i class="fa-solid fa-phone"></i> +92 123 4567890</p>
+      <p><i class="fa-solid fa-envelope"></i> support@perfumehub.com</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 PerfumeHub. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+
+</html>

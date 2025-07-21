@@ -1,0 +1,402 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* --- Navbar Top Line --- */
+.navbar1 {
+  background-color: #1e847f;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* --- Main Navbar --- */
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.searchbar i,
+.account i {
+  font-size: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+/* --- Logo Center --- */
+.logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* --- Navbar Menu --- */
+.navbar3-menu {
+  background-color: #1e847f;
+  padding: 10px 0;
+}
+
+.navbar3-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.navbar3-menu ul li {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.navbar3-menu ul li:hover {
+  background-color: #b7c7c6;
+  border-radius: 5px;
+ 
+}
+.navbar3-menu a{
+   color: #ffffff;
+   text-align: center;
+   text-decoration: none;
+}
+.admin-btn {
+  display: inline-block;
+  align-items: center;
+  justify-items: center;
+  padding: 10px 20px;
+  background-color: white;
+color: #146c66;
+  text-decoration: none;
+  border: 2px solid #1e847f;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.admin-btn:hover {
+  background-color: #1e847f;
+  color: #ffffff;
+}
+
+
+.best-seller {
+  font-size:xx-large;
+  color: #146c66;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 60px;
+  margin-top: 30px;
+  margin: 0px auto;
+  text-align: center;
+ 
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.best-seller h1{
+   animation: slideInLeft 1s ease-out;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #146c66;
+   font-size:  xx-large;
+   font-weight: bold;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.men {
+  font-size:x-large;
+  color: #146c66;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+  font-weight: bold;
+
+  padding-left: 60px;
+  margin-top: 30px;
+  margin: 0px auto;
+  animation: slideInLeft 1s ease-out;
+}
+
+.men h1{
+   animation: slideInLeft 1s ease-out;
+}
+
+
+
+.women {
+  font-size:x-large;
+  font-weight: bold;
+  text-align: center;
+  color: #146c66;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif serif;
+  padding-left: 60px;
+  margin-top: 30px;
+  margin: 0px auto;
+   animation: rightSlide 0.8s ease-out;
+ 
+}
+
+
+@keyframes rightSlide {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.kids {
+  font-size:x-large;
+  font-weight: bold;
+  color: #146c66;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 60px;
+  margin-top: 30px;
+  margin: 0px auto;
+  text-align: center;
+}
+.kids h1{
+     animation: rightSlide 0.8s ease-out;
+}
+
+@keyframes rightSlide {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.gift-sets {
+  font-size: x-large;
+  color: #1e847f;
+  text-align: center;
+  font-weight: bold;
+  font-family: serif;
+  padding-left: 60px;
+  margin-top: 30px;
+  margin: 0px auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfeff;
+  padding: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px #b7d1d1;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(58, 55, 224, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.footer {
+  background-color: #1e847f;
+  color: white;
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  font-size: 14px;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footer-section ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffe600;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffe600;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .navbar2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar3-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+  .admin-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
